@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #1f2937;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+h1 {
+  margin-bottom: 4px;
+}
+.sub {
+  margin-top: 0;
+  color: #4b5563;
+}
+.panel {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+input, select, button {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+#status {
+  font-weight: bold;
+}
+.list-view {
+  display: grid;
+  gap: 10px;
+}
+.item-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f9fafb;
+}
+.item-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.item-card p {
+  margin: 6px 0;
+}
+.item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.badge {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.group {
+  margin-top: 8px;
+}
+.group-title {
+  margin: 0 0 4px;
+  font-weight: 700;
+}
+ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.muted {
+  color: #6b7280;
+}
+.empty {
+  color: #6b7280;
+}
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LMS Backend Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>LMS Backend Demo</h1>
+    <p class="sub">Simple UI to call the backend functions</p>
+
+    <section class="panel">
+      <h2>Create User</h2>
+      <form id="userForm">
+        <input name="id" placeholder="id" required>
+        <input name="name" placeholder="name" required>
+        <input name="email" placeholder="email" required>
+        <select name="role">
+          <option value="STUDENT">Student</option>
+          <option value="INSTRUCTOR">Instructor</option>
+          <option value="ADMIN">Admin</option>
+        </select>
+        <button type="submit">Create</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Create Course</h2>
+      <form id="courseForm">
+        <input name="id" placeholder="course id" required>
+        <input name="title" placeholder="title" required>
+        <input name="description" placeholder="description" required>
+        <button type="submit">Create</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Create Complete Course (Builder)</h2>
+      <form id="completeCourseForm">
+        <input name="id" placeholder="course id" required>
+        <input name="title" placeholder="title" required>
+        <input name="description" placeholder="description" required>
+        <input name="instructorId" placeholder="instructor id (required)" required>
+        <input name="lessonTitles" placeholder="lesson titles separated by | e.g. Intro|SOLID" required>
+        <button type="submit">Create Complete</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Assign Instructor</h2>
+      <form id="assignForm">
+        <input name="courseId" placeholder="course id" required>
+        <input name="instructorId" placeholder="instructor id" required>
+        <button type="submit">Assign</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Enroll Student</h2>
+      <form id="enrollForm">
+        <input name="courseId" placeholder="course id" required>
+        <input name="studentId" placeholder="student id" required>
+        <button type="submit">Enroll</button>
+      </form>
+    </section>
+
+    <section class="grid">
+      <div class="panel">
+        <h2>Users</h2>
+        <div id="usersView" class="list-view"></div>
+      </div>
+      <div class="panel">
+        <h2>Courses</h2>
+        <div id="coursesView" class="list-view"></div>
+      </div>
+    </section>
+
+    <p id="status"></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
