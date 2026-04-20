@@ -20,7 +20,7 @@ public class Main {
         LmsWebServer webServer = new LmsWebServer(
                 app,
                 8080,
-                Path.of("Demo_LMS_UsingPatterns", "web")
+                Path.of("web")
         );
         webServer.start();
 
